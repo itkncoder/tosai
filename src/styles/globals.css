@@ -1,14 +1,30 @@
-* {
-<<<<<<< HEAD
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-=======
-    text-decoration: none;
-    transition: 0.5s;
+.gray-500 {
+    color: gray;
 }
 
 .spanRed {
     color: red;
->>>>>>> a081cdd52185ebcdf25a91fefe8007ea95f38376
+}
+
+.spanBlack {
+    color: black;
+}
+
+.bgRed {
+    background: red;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.formNew {
+    background: #F1F1F1;
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border-radius: 10px;
 }

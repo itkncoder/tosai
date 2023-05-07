@@ -1,3 +1,4 @@
+import CatalogCars from '@/components/catalogTexnik/catalogCars'
 import CatalogTexnic from '@/components/catalogTexnik/catalogTexnic'
 import Layout from '@/layout/layout'
 import { Link } from '@chakra-ui/react'
@@ -14,7 +15,10 @@ import {
 
 const Catalog = () => {
     return (
+      <Layout>
         <CatalogTexnic />
+        <CatalogCars />
+      </Layout>
     )
 }
 

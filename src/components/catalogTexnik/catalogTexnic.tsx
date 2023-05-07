@@ -2,7 +2,7 @@ import Layout from '@/layout/layout'
 import { Link } from '@chakra-ui/react'
 import { Flex, Spacer, Box } from '@chakra-ui/react'
 import { Checkbox, CheckboxGroup } from '@chakra-ui/react'
-import { Button, ButtonGroup , Stack } from '@chakra-ui/react'
+import { Button, ButtonGroup , Stack , Text } from '@chakra-ui/react'
 import {
   Accordion,
   AccordionItem,
@@ -13,7 +13,6 @@ import {
 
 const CatalogTexnic = () => {
     return (
-        <Layout>
           <Box display={'flex'} justifyContent={'center'} alignItems={'center'} h={'60vh'} background={'#F7F7F9'}>
 
             <Box color={"black"}  w={'100'} h={'474px'} p={10} justifyContent={'flex-start'} gap={5} display={'flex'} alignItems={'flex-start'} flexDirection={'column'}>
@@ -36,7 +35,7 @@ const CatalogTexnic = () => {
 
                 </Box>
 
-                <Box fontSize={32}>
+                <Box fontSize={32} fontWeight={'600'}>
                 <h1>Каталог техники</h1>
                 </Box>
 
@@ -193,7 +192,6 @@ const CatalogTexnic = () => {
 
           </Box>
 
-        </Layout>
     )
 }
 

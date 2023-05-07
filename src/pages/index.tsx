@@ -5,7 +5,7 @@ const Home = () => {
     return (
         <Layout>
             <Box>
-                
+                <Box></Box>
             </Box>
         </Layout>
     )

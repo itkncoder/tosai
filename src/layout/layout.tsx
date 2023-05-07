@@ -4,12 +4,12 @@ import { Box } from "@chakra-ui/react"
 
 const Layout = ({children}: any) => {
     return (
-        <Box color={"black"} bg={"white"}>
-            <Box display={"flex"}>
+        <Box color={"black"} bg={"#F7F7F9"}>
+            <Box maxW={"1280px"} mx={"auto"} display={"flex"}>
                 <Box>
                     <Sidebar/>
                 </Box>
-                <Box w={"100%"}>
+                <Box w={"100%"} bg={"white"}>
                     <Box>
                         <Header/>
                     </Box>

@@ -1,5 +1,3 @@
-
-
 const Catalog = () => {
   return <div>
       

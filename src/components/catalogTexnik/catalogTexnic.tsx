@@ -1,8 +1,8 @@
 import Layout from '@/layout/layout'
 import { Link } from '@chakra-ui/react'
-import { Flex, Spacer, Box } from '@chakra-ui/react'
-import { Checkbox, CheckboxGroup } from '@chakra-ui/react'
-import { Button, ButtonGroup , Stack } from '@chakra-ui/react'
+import { Box } from '@chakra-ui/react'
+import { Checkbox } from '@chakra-ui/react'
+import { Button } from '@chakra-ui/react'
 import {
   Accordion,
   AccordionItem,
@@ -18,7 +18,7 @@ const CatalogTexnic = () => {
 
             <Box color={"black"}  w={'100'} h={'474px'} p={10} justifyContent={'flex-start'} gap={5} display={'flex'} alignItems={'flex-start'} flexDirection={'column'}>
 
-                <Box display="flex" alignItems={'center'} gap={10}  >
+                <Box display="flex" alignItems={'center'} gap={10}>
                     <Link href='/' color='#8B8B8B' >
                     Главная
                     </Link>

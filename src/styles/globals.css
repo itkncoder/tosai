@@ -1,0 +1,8 @@
+* {
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.box {
+    box-shadow: 0px 9px 34px rgba(58, 68, 83, 0.24)
+}

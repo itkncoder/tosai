@@ -52,7 +52,7 @@ const CatalogTexnic = () => {
 
                 <Box display={'flex'} flexDirection={'column'}>
                     <p>Тип техники</p>
-                    <Accordion allowMultiple defaultIndex={[1]} background={'#F1F1F1'}>
+                    <Accordion allowMultiple defaultIndex={[1]} background={'#F1F1F1'} rounded={'5px'}>
                     <AccordionItem border={'none'} w={'150px'}>
                         <h2>
                         <AccordionButton>
@@ -72,7 +72,7 @@ const CatalogTexnic = () => {
 
                 <Box display={'flex'} flexDirection={'column'}>
                     <p>Производитель</p>
-                    <Accordion allowMultiple defaultIndex={[1]} background={'#F1F1F1'}>
+                    <Accordion allowMultiple defaultIndex={[1]} background={'#F1F1F1'} rounded={'5px'}>
                     <AccordionItem border={'none'} w={'184px'}>
                         <h2>
                         <AccordionButton>
@@ -92,7 +92,7 @@ const CatalogTexnic = () => {
 
                 <Box display={'flex'} flexDirection={'column'}>
                     <p>Марка</p>
-                    <Accordion allowMultiple defaultIndex={[1]} background={'#F1F1F1'}>
+                    <Accordion allowMultiple defaultIndex={[1]} background={'#F1F1F1'} rounded={'5px'}>
                     <AccordionItem border={'none'} w={'187px'}>
                         <h2>
                         <AccordionButton>
@@ -118,7 +118,7 @@ const CatalogTexnic = () => {
                     
                     <Box display={'flex'} gap={5}>
                         <Box >   
-                            <Accordion allowMultiple defaultIndex={[1]} background={'#F1F1F1'}>
+                            <Accordion allowMultiple defaultIndex={[1]} background={'#F1F1F1'} rounded={'5px'}>
                     <AccordionItem border={'none'} w={'100px'}>
                         <h2>
                         <AccordionButton>
@@ -137,8 +137,8 @@ const CatalogTexnic = () => {
                         </Box>
         
                         <Box>
-                        <Accordion allowMultiple defaultIndex={[]} background={'#F1F1F1'}>
-                        <AccordionItem border={'none'} w={'100px'}>
+                        <Accordion allowMultiple defaultIndex={[]} background={'#F1F1F1'} rounded={'5px'}>
+                        <AccordionItem border={'none'} w={'100px'} >
                             <h2>
                             <AccordionButton>
                                 <Box as="span" flex='1' textAlign='left'>
@@ -168,7 +168,7 @@ const CatalogTexnic = () => {
                         </Box>
 
                         <Box>
-                            <Accordion defaultIndex={[1]} allowMultiple border={'1px'}>
+                            <Accordion defaultIndex={[1]} allowMultiple border={'1px'} rounded={'5px'}>
                                 <AccordionItem border={'none'} w={'230px'}>
                                     <h2>
                                       <AccordionButton>

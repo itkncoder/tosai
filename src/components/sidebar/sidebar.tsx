@@ -10,9 +10,9 @@ const Sidebar = () => {
     return (
         <Box minH={"100vh"} display={"flex"} flexDirection={"column"} justifyContent={"space-between"} py={"30px"} w={"240px"} bg={"#F7F7F9"}>
             <Box>
-                <Box>
+                <Link href={"/"}>
                     <Image width={200} alt="logo" src={logo} />
-                </Box>
+                </Link>
                 <Box mt={"50px"} display={"flex"} flexDirection={"column"} gap={"28px"} px={"26px"} >
                     <Text _hover={{color: "gray"}} cursor={"pointer"} fontWeight={600} fontSize={"16px"} ><Link href={"/"}>Услуги</Link></Text>
                     <Text _hover={{color: "gray"}} cursor={"pointer"} fontWeight={600} fontSize={"16px"} ><Link href={"/catalog"}>Каталог техники</Link></Text>

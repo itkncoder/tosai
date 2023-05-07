@@ -9,7 +9,7 @@ const Layout = ({children}: any) => {
                 <Box>
                     <Sidebar/>
                 </Box>
-                <Box>
+                <Box w={"100%"}>
                     <Box>
                         <Header/>
                     </Box>

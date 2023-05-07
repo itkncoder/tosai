@@ -2,3 +2,7 @@
     text-decoration: none;
     transition: 0.5s;
 }
+
+.spanRed {
+    color: red;
+}

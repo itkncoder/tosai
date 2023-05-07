@@ -1,6 +1,6 @@
 import Layout from "@/layout/layout"
 import { Box, Button, Text } from "@chakra-ui/react"
-import { CalendarIcon, ChatIcon, InfoOutlineIcon, PlusSquareIcon, SettingsIcon, StarIcon, WarningTwoIcon } from "@chakra-ui/icons"
+import { BellIcon, CalendarIcon, ChatIcon, EmailIcon, InfoOutlineIcon, PhoneIcon, PlusSquareIcon, SettingsIcon, StarIcon, WarningTwoIcon } from "@chakra-ui/icons"
 import Image from "next/image"
 import mainTopImg from "@/assets/main-top.png"
 import human from "@/assets/human.png"
@@ -9,16 +9,16 @@ import CatalogTexnic from "@/components/catalogTexnik/catalogTexnic"
 const Home = () => {
     return (
         <Layout>
-            <Box>
+            <Box position={"relative"}>
                 <Box position={"relative"} display={"flex"} justifyContent={"center"} w={"100%"} bg={"linear-gradient(0deg, rgba(0, 0, 0, 0.37), rgba(0, 0, 0, 0.37))"}>
                     <Image alt="main-top" priority src={mainTopImg} width={1080} height={316} />
-                    <Text maxW={"666px"} color={"white"} textAlign={"center"} position={"absolute"} w={"100%"} display={"flex"} justifyContent={"center"} alignItems={"center"} top={"62px"} fontSize={"42px"} fontWeight={"700"} >Доставим любую технику из Японии за 3 недели</Text>
+                    <Text maxW={"666px"} color={"white"} textAlign={"center"} position={"absolute"} w={"100%"} display={"flex"} justifyContent={"center"} alignItems={"center"} top={"55px"} fontSize={"42px"} fontWeight={"700"} >Доставим любую технику из Японии за 3 недели</Text>
                 </Box>
-                <Box>
+                <Box position={"absolute"} left={"0"} top={"50%"} >
                     <CatalogTexnic/>
                 </Box>
             </Box>
-            <Box my={"70px"} >
+            <Box mt={"220px"} mb={"70px"} >
                 <Text fontSize={"24px"} textAlign={"center"} fontWeight={600} >Наши преимущества</Text>
                 <Box mt={"30px"} display={"flex"} justifyContent={"space-between"} alignItems={"center"} px={"45px"}>
                     <Box display={"flex"} flexDirection={"column"} gap={"8px"} >    
@@ -153,15 +153,91 @@ const Home = () => {
                                     <Text fontWeight={"700"} maxW={"160px"} >Подбор и покупка авто</Text>
                                     <Text fontSize={"12px"} maxW={"160px"} color={"gray"} >Вам предлагаются подходящие варианты с аукционов, Вы принимаете решение, автомобиль выкупается.</Text>
                                 </Box>
-                                <Box display={"flex"} flexDirection={"column"} alignItems={"center"} border={"1px dashed #CD0000"} height={"190px"} rounded={"9px"} py={"25px"} gap={"8px"} >
-                                    <Text fontWeight={"600"}>Оставить заявку</Text>
-                                    <ChatIcon fontSize={"36px"} color={"gray"} />
+                                <Box display={"flex"} flexDirection={"column"} alignItems={"center"} border={"1px dashed #CD0000"} height={"190px"} rounded={"9px"} py={"35px"} gap={"8px"} px={"2px"} >
+                                    <Text fontSize={"14px"} fontWeight={"600"}>Оставить заявку</Text>
+                                    <ChatIcon fontSize={"32px"} color={"gray"} />
                                 </Box>
                             </Box>
                         </Box>
                     </Box>
                 </Box>
             </Box>
+
+            <Box my={"40px"} >
+                <Text fontSize={"24px"} textAlign={"start"} px={"45px"} fontWeight={600} >Отзывы</Text>
+                <Box mt={"30px"} display={"flex"} justifyContent={"space-between"} alignItems={"center"} px={"45px"}>
+                    <Box display={"flex"} flexDirection={"column"} gap={"3px"} >    
+                        <Box>
+                            <iframe width={"90%"} height={"auto"} src="https://www.youtube.com/embed/Ss-7BY7u17I" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
+                        </Box>
+                        <Box>
+                            <Text fontWeight={"600"} >Космический Shuttle | HONDA FIT SHUTTLE 2013</Text>
+                            <Text fontSize={"12px"} color={"gray"} >391 просмотр ♦ 3 недели назад</Text>
+                        </Box>
+                    </Box>
+                    <Box display={"flex"} flexDirection={"column"} gap={"3px"} >    
+                        <Box>
+                            <iframe width={"90%"} height={"auto"} src="https://www.youtube.com/embed/Ss-7BY7u17I" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
+                        </Box>
+                        <Box>
+                            <Text fontWeight={"600"} >Компактный минивен I Toyota Siena 2017 г.</Text>
+                            <Text fontSize={"12px"} color={"gray"} >391 просмотр ♦ 3 недели назад</Text>
+                        </Box>
+                    </Box>
+                    <Box display={"flex"} flexDirection={"column"} gap={"3px"} >    
+                        <Box>
+                            <iframe width={"90%"} height={"auto"} src="https://www.youtube.com/embed/Ss-7BY7u17I" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
+                        </Box>
+                        <Box>
+                            <Text fontWeight={"600"} >Спецтехника по-крупному | KATO KB1500R</Text>
+                            <Text fontSize={"12px"} color={"gray"} >391 просмотр ♦ 3 недели назад</Text>
+                        </Box>
+                    </Box>
+                </Box>
+                <Box w={"100%"} px={"50px"}>
+                    <Button w={"100%"} my={"50px"} bg={"#F4F4F4"} fontWeight={400} >Смотреть все обзоры</Button>
+                </Box>
+            </Box>
+
+            <Box>
+                <Box py={"35px"} px={"45px"} display={"flex"} justifyContent={"space-between"} >
+                    <Box w={"50%"}>
+                        <Text fontWeight={500} fontSize={"24px"} >Как с нами связаться?</Text>
+                        <Text color={"gray"} mt={"10px"} >Владивосток, ул. Фадеева, д. 47 строение 1</Text>
+                        <Box display={"flex"} flexDirection={"column"} gap={"8px"} mt={"20px"}>
+                            <Box display={"flex"} justifyContent={"start"} alignItems={"center"} gap={"8px"} >
+                                <PhoneIcon fontSize={"18px"} color={"gray"} />
+                                <Text><span style={{color: "red"}} >+7 (423) 208-11-18</span> - для заказа авто</Text>
+                            </Box>
+                            <Box display={"flex"} justifyContent={"start"} alignItems={"center"} gap={"8px"} >
+                                <PhoneIcon fontSize={"18px"} color={"gray"} />
+                                <Text><span style={{color:'red'}} >+7 (984) 197-77-78</span> - для заказа авто и мото техники</Text>
+                            </Box>
+                            <Box display={"flex"} justifyContent={"start"} alignItems={"center"} gap={"8px"} >
+                                <PhoneIcon fontSize={"18px"} color={"gray"} />
+                                <Text><span style={{color:"red"}}>+7 (914) 691-85-05</span> - для заказа спецтехники</Text>
+                            </Box>
+                        </Box>
+                    </Box>
+                    <Box w={"20%"} mt={"20px"}>
+                        <Box display={"flex"} justifyContent={"center"} alignItems={"center"} gap={"10px"} >
+                            <BellIcon color={"green.400"} fontSize={"20px"} />
+                            <Text color={"gray"}>+7 (984) 198-11-18</Text>
+                        </Box>
+                        <Box display={"flex"} justifyContent={"center"} alignItems={"center"} gap={"10px"} >
+                            <BellIcon color={"green.400"} fontSize={"20px"} />
+                            <Text color={"gray"}>+7 (984) 197-77-78</Text>
+                        </Box>
+                    </Box>
+                    <Box mt={"20px"} w={"20%"} display={"flex"} alignItems={"start"} gap={"10px"}>
+                        <Box display={"flex"} alignItems={"center"} gap={"10px"} >
+                            <EmailIcon color={"gray"} fontSize={"18px"} />
+                            <a href=""><Text color={"#CD0000"} >spec@tosei.ru</Text></a>
+                        </Box>
+                    </Box>
+                </Box>
+            </Box>
+
         </Layout>
     )
 }

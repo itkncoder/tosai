@@ -15,7 +15,7 @@ const Sidebar = () => {
                 </Box>
                 <Box mt={"50px"} display={"flex"} flexDirection={"column"} gap={"28px"} px={"26px"} >
                     <Text _hover={{color: "gray"}} cursor={"pointer"} fontWeight={600} fontSize={"16px"} ><Link href={"/"}>Услуги</Link></Text>
-                    <Text _hover={{color: "gray"}} cursor={"pointer"} fontWeight={600} fontSize={"16px"} ><Link href={"/"}>Каталог техники</Link></Text>
+                    <Text _hover={{color: "gray"}} cursor={"pointer"} fontWeight={600} fontSize={"16px"} ><Link href={"/catalog"}>Каталог техники</Link></Text>
                     <Text _hover={{color: "gray"}} cursor={"pointer"} fontWeight={600} fontSize={"16px"} ><Link href={"/"}>Аукционы</Link></Text>
                     <Accordion defaultIndex={[1]} allowMultiple >
                         <AccordionItem border={"0"}>

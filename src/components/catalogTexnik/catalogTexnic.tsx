@@ -1,15 +1,8 @@
 import Layout from '@/layout/layout'
-<<<<<<< HEAD
-import { Link } from '@chakra-ui/react'
-import { Flex, Spacer, Box } from '@chakra-ui/react'
-import { Checkbox, CheckboxGroup } from '@chakra-ui/react'
-import { Button, ButtonGroup , Stack , Text } from '@chakra-ui/react'
-=======
 import { Link, Text } from '@chakra-ui/react'
 import { Box } from '@chakra-ui/react'
 import { Checkbox } from '@chakra-ui/react'
 import { Button } from '@chakra-ui/react'
->>>>>>> 82ab4e6613f0ae037a0d637a357b79b02c542529
 import {
   Accordion,
   AccordionItem,
@@ -20,37 +13,9 @@ import {
 
 const CatalogTexnic = () => {
     return (
-<<<<<<< HEAD
-          <Box display={'flex'} justifyContent={'center'} alignItems={'center'} h={'60vh'} background={'#F7F7F9'}>
-
-            <Box color={"black"}  w={'100'} h={'474px'} p={10} justifyContent={'flex-start'} gap={5} display={'flex'} alignItems={'flex-start'} flexDirection={'column'}>
-
-                <Box display="flex" alignItems={'center'} gap={10}  >
-                    <Link href='/' color='#8B8B8B' >
-                    Главная
-                    </Link>
-
-                    <ul>
-                    <li></li>
-                    </ul>
-
-                    <Link href='contact' color={'#8B8B8B'}>
-                    Контакты
-                    </Link>
-
-
-
-
-                </Box>
-
-                <Box fontSize={32} fontWeight={'600'}>
-                <h1>Каталог техники</h1>
-                </Box>
-=======
           <Box w={"96%"} display={'flex'} justifyContent={'center'} alignItems={'center'}>
 
             <Box color={"black"} h={'474px'} p={10} justifyContent={'flex-start'} gap={5} display={'flex'} alignItems={'flex-start'} flexDirection={'column'}>
->>>>>>> 82ab4e6613f0ae037a0d637a357b79b02c542529
 
                 <Box background={'white'} display={'flex'} justifyContent={'flex-start'} flexDirection={'column'} alignItems={'flex-start'} gap={'30'} p={'10'} rounded={'10px'} boxShadow={"0px 9px 34px rgba(58, 68, 83, 0.24)"} w={'1007px'} h={'254px'}>
 
@@ -174,10 +139,6 @@ const CatalogTexnic = () => {
                 </Box>
 
           </Box>
-<<<<<<< HEAD
-
-=======
->>>>>>> 82ab4e6613f0ae037a0d637a357b79b02c542529
     )
 }
 

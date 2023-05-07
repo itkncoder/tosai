@@ -1,9 +1,17 @@
+<<<<<<< HEAD
 .gray-500 {
     color: gray;
+=======
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+>>>>>>> 82ab4e6613f0ae037a0d637a357b79b02c542529
 }
 
 .spanRed {
     color: red;
+<<<<<<< HEAD
 }
 
 .spanBlack {
@@ -27,4 +35,6 @@
     padding: 10px;
     outline: none;
     border-radius: 10px;
+=======
+>>>>>>> 82ab4e6613f0ae037a0d637a357b79b02c542529
 }

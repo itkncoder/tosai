@@ -1,16 +1,10 @@
-import Sidebar from "@/components/sidebar/sidebar"
-import { Box } from "@chakra-ui/react"
+import Layout from "@/layout/layout"
 
 const Home = () => {
     return (
-        <Box color={"black"} bg={"white"}>
-            <Box>
-                <Sidebar/>
-                <Box>
-                    
-                </Box>
-            </Box>
-        </Box>
+        <Layout>
+            sfds
+        </Layout>
     )
 }
 

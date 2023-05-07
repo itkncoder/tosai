@@ -13,9 +13,11 @@ import {
 const Catalog = () => {
     return (
         <Layout>
-            <Box color={"black"} background={'#F7F7F9'} w={'1080px'} h={'364px'} justifyContent={'flex-start'} display={'flex'} alignItems={'flex-start'} flexDirection={'column'}>
+          <Box display={'flex'} justifyContent={'center'} alignItems={'center'} h={'100vh'}>
 
-                <Box display="flex" alignItems={'center'}  >
+            <Box color={"black"} background={'#F7F7F9'} w={'100'} h={'364px'} p={10} justifyContent={'flex-start'} display={'flex'} alignItems={'flex-start'} flexDirection={'column'}>
+
+                <Box display="flex" alignItems={'center'} gap={10}  >
                     <Link href='/' color='#8B8B8B' >
                     Главная
                     </Link>
@@ -44,11 +46,13 @@ const Catalog = () => {
                 <Checkbox isInvalid>Распил или конструктор</Checkbox>
                 </Box>
 
-                <Box >
+                <Box display={'flex'}>
+
+
                 <Box display={'flex'} flexDirection={'column'}>
                     <p>Тип техники</p>
                     <Accordion allowMultiple defaultIndex={[1]} background={'#F1F1F1'}>
-                    <AccordionItem>
+                    <AccordionItem border={'none'} w={'150px'}>
                         <h2>
                         <AccordionButton>
                             <Box as="span" flex='1' textAlign='left'>
@@ -58,13 +62,97 @@ const Catalog = () => {
                         </AccordionButton>
                         </h2>
                         <AccordionPanel pb={4}>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        Lorem ipsum dolor sit amet,
                         </AccordionPanel>
                     </AccordionItem>
 
                     </Accordion>
                 </Box>
 
+                <Box display={'flex'} flexDirection={'column'}>
+                    <p>Производитель</p>
+                    <Accordion allowMultiple defaultIndex={[1]} background={'#F1F1F1'}>
+                    <AccordionItem border={'none'} w={'184px'}>
+                        <h2>
+                        <AccordionButton>
+                            <Box as="span" flex='1' textAlign='left'>
+                            Не выбрано
+                            </Box>
+                            <AccordionIcon />
+                        </AccordionButton>
+                        </h2>
+                        <AccordionPanel pb={4}>
+                        Lorem ipsum dolor sit amet,
+                        </AccordionPanel>
+                    </AccordionItem>
+
+                    </Accordion>
+                </Box>
+
+                <Box display={'flex'} flexDirection={'column'}>
+                    <p>Марка</p>
+                    <Accordion allowMultiple defaultIndex={[1]} background={'#F1F1F1'}>
+                    <AccordionItem border={'none'} w={'187px'}>
+                        <h2>
+                        <AccordionButton>
+                            <Box as="span" flex='1' textAlign='left'>
+                            Не выбрано
+                            </Box>
+                            <AccordionIcon />
+                        </AccordionButton>
+                        </h2>
+                        <AccordionPanel pb={4}>
+                        Lorem ipsum dolor sit amet,
+                        </AccordionPanel>
+                    </AccordionItem>
+
+                    </Accordion>
+                </Box>
+
+                <Box display={'flex'} flexDirection={'column'}>
+                   <Box>
+                    <p>Год выпуска</p>
+                   </Box>
+
+                   <Box display={'flex'} justifyContent={'space-between'} w={100}>
+
+                    <Accordion allowMultiple defaultIndex={[1]} background={'#F1F1F1'}>
+                    <AccordionItem border={'none'} w={'100px'}>
+                        <h2>
+                        <AccordionButton>
+                            <Box as="span" flex='1' textAlign='left'>
+                            от
+                            </Box>
+                            <AccordionIcon />
+                        </AccordionButton>
+                        </h2>
+                        <AccordionPanel pb={4}>
+                        Lorem ipsum dolor sit amet,
+                        </AccordionPanel>
+                    </AccordionItem>
+
+                    </Accordion>
+
+                    <Accordion allowMultiple defaultIndex={[1]} background={'#F1F1F1'}>
+                    <AccordionItem border={'none'} w={'100px'}>
+                        <h2>
+                        <AccordionButton>
+                            <Box as="span" flex='1' textAlign='left'>
+                              до  
+                            </Box>
+                            <AccordionIcon />
+                        </AccordionButton>
+                        </h2>
+                        <AccordionPanel pb={4}>
+                        Lorem ipsum dolor sit amet,
+                        </AccordionPanel>
+                    </AccordionItem>
+
+                    </Accordion>
+
+                   </Box>
+                </Box>
+
 
 
 
@@ -77,6 +165,9 @@ const Catalog = () => {
 
 
                 </Box>
+
+          </Box>
+
         </Layout>
     )
 }

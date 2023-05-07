@@ -42,10 +42,11 @@ const Catalog = () => {
      </Box>
 
      <Box >
+
       <Box display={'flex'} flexDirection={'column'}>
         <p>Тип техники</p>
-        <Accordion defaultIndex={[1]} background={'#F1F1F1'}>
-          <AccordionItem>
+        <Accordion defaultIndex={[1]} background={'#F1F1F1'} >
+          <AccordionItem border={'none'}>
             <h2>
               <AccordionButton>
                 <Box as="span" flex='1' textAlign='left'>

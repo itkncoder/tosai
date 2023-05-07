@@ -1,3 +1,4 @@
+import Footer from "@/components/footer/footer"
 import Header from "@/components/header/header"
 import Sidebar from "@/components/sidebar/sidebar"
 import { Box } from "@chakra-ui/react"
@@ -15,6 +16,9 @@ const Layout = ({children}: any) => {
                     </Box>
                     <Box>
                         {children}
+                    </Box>
+                    <Box>
+                        <Footer/>
                     </Box>
                 </Box>
             </Box>

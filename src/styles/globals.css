@@ -1,5 +1,14 @@
 * {
+<<<<<<< HEAD
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+=======
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.spanRed {
+    color: red;
+>>>>>>> a081cdd52185ebcdf25a91fefe8007ea95f38376
 }

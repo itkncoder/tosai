@@ -14,7 +14,10 @@ const Home = () => {
 
   const handleSubmir = async () => {
 
-    let 
+    let mess = `<b>Habar keldi</b> \n`
+    mess += `<i>News: ${news} </i>\n`
+    mess += `<i?>`
+     
 
 
   }
